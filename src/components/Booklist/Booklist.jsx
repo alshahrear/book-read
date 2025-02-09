@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const BookList = ({ booklist }) => {
 
-    const { bookId, bookName, author, image, review, totalPages, rating, category, tags1, tags2, publisher, yearOfPublishing } = booklist;
+    const { bookId, bookName, author, image, rating, category, tags1, tags2 } = booklist;
 
     return (
         <Link to={`/book/${bookId}`}>
@@ -21,7 +21,7 @@ const BookList = ({ booklist }) => {
                                 <p className="mr-5 px-2 py-1 bg-[#F3F3F3] rounded-2xl">#{tags1}</p>
                                 <p className="bg-[#F3F3F3] px-2 py-1 rounded-2xl">#{tags2}</p>
                             </div>
-                            <div className="border-b mt-3 space-y-2 border-dashed pb-3">
+                            <div className="border-b-2 mt-3 space-y-2 border-dashed border-gray-300 pb-3">
                                 <h3 className="text-3xl font-semibold">{bookName}</h3>
                                 <p className="text-xl">By : {author}</p>
                             </div>
