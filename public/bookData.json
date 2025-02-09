@@ -8,7 +8,8 @@
       "totalPages": 320,
       "rating": 4.8,
       "category": "Self-Help",
-      "tags": ["Productivity", "Psychology"],
+      "tags1": ["Productivity"],
+      "tags2": ["Psychology"],
       "publisher": "Avery",
       "yearOfPublishing": 2018
     },
@@ -21,7 +22,8 @@
       "totalPages": 208,
       "rating": 4.7,
       "category": "Fiction",
-      "tags": ["Adventure", "Philosophy"],
+      "tags1": ["Adventure"],
+      "tags2": ["Philosophy"],
       "publisher": "HarperOne",
       "yearOfPublishing": 1988
     },
@@ -34,7 +36,8 @@
       "totalPages": 499,
       "rating": 4.6,
       "category": "Psychology",
-      "tags": ["Behavioral Science", "Cognitive"],
+      "tags1": ["Behavioral Science"],
+      "tags2": ["Cognitive"],
       "publisher": "Farrar, Straus and Giroux",
       "yearOfPublishing": 2011
     },
@@ -47,7 +50,8 @@
       "totalPages": 336,
       "rating": 4.5,
       "category": "Finance",
-      "tags": ["Investment", "Wealth"],
+      "tags1": ["Investment"],
+      "tags2": ["Wealth"],
       "publisher": "Plata Publishing",
       "yearOfPublishing": 1997
     },
@@ -60,7 +64,8 @@
       "totalPages": 328,
       "rating": 4.9,
       "category": "Dystopian",
-      "tags": ["Politics", "Society"],
+      "tags1": ["Politics"],
+      "tags2": ["Society"],
       "publisher": "Secker & Warburg",
       "yearOfPublishing": 1949
     },
@@ -73,7 +78,8 @@
       "totalPages": 256,
       "rating": 4.8,
       "category": "Finance",
-      "tags": ["Money", "Mindset"],
+      "tags1": ["Money"],
+      "tags2": ["Mindset"],
       "publisher": "Harriman House",
       "yearOfPublishing": 2020
     }
