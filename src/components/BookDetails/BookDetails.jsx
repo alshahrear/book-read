@@ -22,7 +22,6 @@ const BookDetails = () => {
     const handleReadClick = () => {
         let storedBooks = JSON.parse(localStorage.getItem("readBooks")) || [];
 
-      
         const alreadyAdded = storedBooks.some((b) => b.bookId === book.bookId);
 
         if (alreadyAdded) {
@@ -37,7 +36,6 @@ const BookDetails = () => {
     const handleWishlistClick = () => {
         let storedWishlist = JSON.parse(localStorage.getItem("wishlistBooks")) || [];
 
-        // 📌 আগে থেকে বই আছে কিনা চেক করা হচ্ছে
         const alreadyAdded = storedWishlist.some((b) => b.bookId === book.bookId);
 
         if (alreadyAdded) {
