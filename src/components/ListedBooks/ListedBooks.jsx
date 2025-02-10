@@ -9,8 +9,10 @@ const ListedBooks = () => {
 
   return (
     <div className="max-w-[1250px] mx-auto mt-5">
-      {/* Short By Dropdown */}
-      <div className="flex justify-center">
+      <div className="flex justify-center rounded-xl mb-4 py-4 bg-[#F3F3F3]">
+        <h2 className="text-3xl font-extrabold">Books</h2>
+      </div>
+      <div className="flex justify-center mb-12">
         <details className="dropdown">
           <summary className="btn text-xl bg-[#23BE0A] text-white m-1">
             Short By <span className="text-2xl"><MdOutlineKeyboardArrowDown /></span>
@@ -23,9 +25,8 @@ const ListedBooks = () => {
         </details>
       </div>
 
-      {/* Tabs Section */}
       <div className="flex items-center overflow-x-auto overflow-y-hidden flex-nowrap max-w-[1250px] mx-auto">
-        {/* Read Books Tab */}
+
         <a
           onClick={() => setActiveTab("read")}
           className={`flex items-center flex-shrink-0 px-5 py-3 space-x-2 
@@ -38,7 +39,6 @@ const ListedBooks = () => {
           <Link><span>Read Books</span></Link>
         </a>
 
-        {/* Wishlist Books Tab */}
         <a
           onClick={() => setActiveTab("wishlist")}
           className={`flex items-center flex-shrink-0 px-5 py-3 space-x-2 

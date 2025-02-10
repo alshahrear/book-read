@@ -21,27 +21,39 @@ const BookDetails = () => {
 
     const handleReadClick = () => {
         let storedBooks = JSON.parse(localStorage.getItem("readBooks")) || [];
+        let storedWishlist = JSON.parse(localStorage.getItem("wishlistBooks")) || [];
 
-        const alreadyAdded = storedBooks.some((b) => b.bookId === book.bookId);
+        const alreadyInReadList = storedBooks.some((b) => b.bookId === book.bookId);
+        const alreadyInWishlist = storedWishlist.some((b) => b.bookId === book.bookId);
 
-        if (alreadyAdded) {
+        if (alreadyInReadList) {
             toast.error("Already added to the Readlist");
         } else {
-            toast.success("Book added to Readlist");
+            toast.success("Book added to the Readlist");
+            
+            if (alreadyInWishlist) {
+                storedWishlist = storedWishlist.filter((b) => b.bookId !== book.bookId);
+                localStorage.setItem("wishlistBooks", JSON.stringify(storedWishlist));
+            }
+
             storedBooks.push(book);
             localStorage.setItem("readBooks", JSON.stringify(storedBooks));
         }
     };
 
     const handleWishlistClick = () => {
+        let storedBooks = JSON.parse(localStorage.getItem("readBooks")) || [];
         let storedWishlist = JSON.parse(localStorage.getItem("wishlistBooks")) || [];
 
-        const alreadyAdded = storedWishlist.some((b) => b.bookId === book.bookId);
+        const alreadyInReadList = storedBooks.some((b) => b.bookId === book.bookId);
+        const alreadyInWishlist = storedWishlist.some((b) => b.bookId === book.bookId);
 
-        if (alreadyAdded) {
+        if (alreadyInReadList) {
+            toast.error("Already added to the Readlist");
+        } else if (alreadyInWishlist) {
             toast.error("Already added to the Wishlist");
         } else {
-            toast.success("Book added to Wishlist");
+            toast.success("Book added to the Wishlist");
             storedWishlist.push(book);
             localStorage.setItem("wishlistBooks", JSON.stringify(storedWishlist));
         }

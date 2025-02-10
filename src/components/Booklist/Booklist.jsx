@@ -23,7 +23,7 @@ const BookList = ({ booklist }) => {
                             </div>
                             <div className="border-b-2 mt-3 space-y-2 border-dashed border-gray-300 pb-3">
                                 <h3 className="text-3xl font-semibold">{bookName}</h3>
-                                <p className="text-xl">By : {author}</p>
+                                <p className="text-xl font-medium">By : {author}</p>
                             </div>
                             <div className="flex justify-between pt-3">
                                 <div><h4 className="text-xl">{category}</h4></div>
