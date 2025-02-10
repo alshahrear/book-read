@@ -11,7 +11,7 @@ const BookCover = () => {
                 </Link>
             </div>
             <div>
-                <img className="w-60 pt-20 pb-20" src="../../../public/images/book-cover.png" alt="" />
+            <img className="w-60 pt-20 pb-20" src="/images/book-cover.png" alt="Book Cover" />
             </div>
         </div>
     );
