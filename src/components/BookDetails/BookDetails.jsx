@@ -16,7 +16,7 @@ const BookDetails = () => {
     }, [bookId]);
 
     if (!book) {
-        return <p className="text-center text-2xl mt-10">Loading...</p>;
+        return <p className="text-center mt-10"><span className="loading loading-spinner text-warning text-4xl "></span></p>;
     }
 
     const handleReadClick = () => {
